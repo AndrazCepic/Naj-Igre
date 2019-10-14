@@ -1,8 +1,8 @@
 # Naj-Igre
 
-Analiziral bom približno 15000 iger na vseh platformah vseh let izdaje na voljo.
+Analiziral bom približno 5000 iger na vseh platformah vseh let izdaje na voljo.
 
-Podatke bom pridobil s strani Metacritic, in sicer https://www.metacritic.com/browse/games/score/userscore/all/all/filtered?sort=desc
+Podatke bom pridobil s strani Metacritic po vrsti od najboljšjih k slabšim, in sicer https://www.metacritic.com/browse/games/score/userscore/all/all/filtered?sort=desc
 
 Upošteval bom ocene splošnih uporabnikov in kritikov ter glede na te podatke analiziral nekaj lastnosti industrije iger.
 
