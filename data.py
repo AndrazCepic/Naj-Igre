@@ -4,10 +4,15 @@ import os
 import requests
 
 home_url = 'https://www.metacritic.com/browse/games/score/userscore/all/all/filtered?sort=desc'
-products_per_page = 0
-page_count = 1
+products_per_page = 98
+page_count = 10
 
-main_page_regex = r'<li class="product game_product".*?"basic_stat product_title".*?"(?P<game_link>/game.+?)"'
+game_data = {}
+
+main_page_regex = (
+    r'<li class="product game_product".*?'
+    r'"basic_stat product_title".*?"(?P<game_link>/game.+?)"'
+)
 
 # GET headers
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0'
@@ -24,6 +29,7 @@ def download_url_to_html_string(url):
     """ Function takes an URL of a page and downloads, 
     then returns the full HTML string it downloaded
     """
+    content = None
     try:
         content = requests.get(url, headers=headers)
     except Exception as e:
@@ -49,7 +55,7 @@ def save_page(url, dir, file):
 
 def save_all_main_pages():
     """ Funciton saves all the pages we need for the analysis"""
-    for page_num in range(page_count):
+    for page_num in range(5, page_count):
         save_page(main_page_url(page_num), "main_pages", "page_" + str(page_num) + ".html")
 
 
@@ -63,13 +69,12 @@ def read_html_file(dir, file):
         return f.read()
 
 
-
+def 
 
 
 def main():
-    # save_all_main_pages()
-    count = len(page_to_games(read_html_file("main_pages", "page_0.html")))
-    print(count)
+    save_all_main_pages()
+    #print(page_to_games(read_html_file("main_pages", "page_0.html")))
 
 
 if __name__ == '__main__':
