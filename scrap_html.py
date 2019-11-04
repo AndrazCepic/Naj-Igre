@@ -128,7 +128,7 @@ def main():
 
     games = list_str.split("\n")
 
-    size = len(games) / 4
+    size = int(len(games) / 4)
     threads = [GameScrapThread(i, games, i * size, (i + 1) * size) for i in range(4)]
     for i in range(4):
         threads[i].start()
