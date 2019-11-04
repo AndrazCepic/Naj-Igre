@@ -33,7 +33,7 @@ def download_url_to_html_string(url):
         if url not in potential_fail_urls:
             potential_fail_urls.append(url)
             with open("potential_misses.txt", "w") as f:
-                f.write("FOR: " + url + " ERROR: " + e + "\n")   
+                f.write("FOR: " + url + " ERROR: " + str(e) + "\n")   
 
     return content.text if not content == None else None
 
