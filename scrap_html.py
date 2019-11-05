@@ -76,6 +76,7 @@ def extract_game_links(num_page):
     first_item = soup.find_all("li", class_="product game_product first_product")[0]
     links.append(first_item.a.attrs["href"])
 
+    # Entries in between
     for item in soup.find_all("li", class_="product game_product"):
         links.append(item.a.attrs["href"])
 
@@ -113,13 +114,15 @@ class GameScrapThread (Thread):
         save_game_pages(self.games, self.begin, self.end)
 
 def main():
-    #save_all_main_pages(10)
+    # Downloading all the main pages with the list of games
+    save_all_main_pages(10)
 
-    #with open("link_list.txt", "w") as f:
-    #    for i in range(page_count):
-    #        links = extract_game_links(i)
-    #        for link in links:
-    #            f.write(link + "\n")
+    # Extracting the links to game pages using Beautiful Soup
+    with open("link_list.txt", "w") as f:
+        for i in range(page_count):
+            links = extract_game_links(i)
+            for link in links:
+                f.write(link + "\n")
 
     # Download the specific game pages on 4 threads
     list_str = ""

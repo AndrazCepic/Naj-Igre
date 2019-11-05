@@ -8,23 +8,28 @@ Upošteval bom ocene splošnih uporabnikov in kritikov ter glede na te podatke a
 
 O posamezni igri bom zajel bom podatke:
 * Naslov igre
-* Leto izida igre
-* Studio, ki je igro razvil
-* Založba, ki je igro izdala
-* Žanr igre
 * Platforma igre
-* Online/Offline vrsta igre
+* Leto izida igre
+* Založba igre
+* Studio, ki je igro razvil
+* Metascore ocena igre(profesionalni kritiki)
+* Ocena splošnih uporabnikov
 * ESRB rating igre
-* Ocena igre(Metascore in User score) na strani Metacritic
-* Število glasov uporabnikov na strani Metacritic
-
-O založbah bom zajel podatke:
-* Število izdanih iger, ki so bile tudi ocenjene na Metacritic strani(zagotovljena primerljivost z vzorcem iger)
+* Žanri igre
 
 Hipoteze:
 * Kateri so najbolj priljubljeni žanri iger?
 * Katere so najbolj uspešne platforme v zgodovini?
-* Kateri so najbolj uspešni studiji iger po kvaliteti del?
-* Ali je offline vrsta igre v splošnem bolj kvalitetna kot online?
+* Kateri so najbolj uspešni studiji in založbe iger po kvaliteti del?
 * Ali je ESRB rating povezan s kvaliteto igre?
-* Ali kritiki dajejo prednost igram izdanim pod večjimi založbami(metrika je število izdanih iger, ki so bile ocenjene)?
+* Ali se ocene kritikov močno razlikujejo od ocen splošnih uporabnikov?
+
+## Opomba!
+Razlikoval bom vnose po platformah, čeprav gre lahko za isti naslov, 
+saj so ocene in izkušnje zelo različne glede na platformo, 
+včasih pa je celo igra čisto drugačna, čeprav nosi isti naslov.
+Znani primeri:
+* GTA IV - slab port na PC
+* Chrono Trigger - spet slab port/remaster na PC
+* Dark Souls - zelo slab FPS v Blightown lokaciji na Xbox 360
+* Need For Speed Underground 2 - čisto druga igra na Nintendo DS kot drugje!
