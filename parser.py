@@ -30,6 +30,7 @@ def extract_publisher(soup):
     tag = soup.find("li", class_="summary_detail publisher")
     return tag.find("span", class_="data").a.text.strip()
 
+
 def extract_dev(soup):
     for tag in soup.find_all("tr"):
         if tag.find("th") != None: 
@@ -39,6 +40,9 @@ def extract_dev(soup):
 
 def extract_mscore(soup):
     tag = soup.find("div", class_="metascore_wrap feature_metascore")
+    if tag.a == None or tag.a.div == None:
+        return "TBD"
+
     return tag.a.div.span.text.strip()
 
 
@@ -123,7 +127,7 @@ for game_link in game_links:
     pair = extract_game_data(game_link)
     if pair == None:
         continue
-    
+
     game_data, game_genres = pair
     games.append(game_data)
     
