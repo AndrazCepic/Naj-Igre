@@ -17,12 +17,19 @@ O posamezni igri bom zajel bom podatke:
 * ESRB rating igre
 * Žanri igre
 
-Hipoteze in zastavljena vprašanja:
-* Kateri so najbolj priljubljeni žanri iger?
+Zastavljena vprašanja:
+* Kateri so najbolj uspešni žanri iger po ocenah vseh?
 * Katere so najbolj uspešne platforme v zgodovini?
 * Kateri so najbolj uspešni studiji in založbe iger po kvaliteti del?
 * Ali je ESRB rating povezan s kvaliteto igre?
-* Ali se ocene kritikov močno razlikujejo od ocen splošnih uporabnikov?
+* Ali se ocene kritikov vidno razlikujejo od ocen splošnih uporabnikov?
+
+Hipoteze: 
+* Najbolj uspešen žanr iger po ocenah vseh je RPG,
+* Najuspešnejše tri platforme so PC, PS4 in Nintendo WII,
+* Najuspešnejši studijo po kvaliteti je Nintendo,
+* Ne, ESRB ni povezan s kvaliteto,
+* Da, ocene kritikov se pogosto vidno razlikujejo od ocen uporabnikov.
 
 ## Opomba!
 Razlikoval bom vnose po platformah, čeprav gre lahko za isti naslov, 
