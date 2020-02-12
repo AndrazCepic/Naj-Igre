@@ -17,7 +17,7 @@ O posamezni igri bom zajel bom podatke:
 * ESRB rating igre
 * Žanri igre
 
-Hipoteze:
+Hipoteze in zastavljena vprašanja:
 * Kateri so najbolj priljubljeni žanri iger?
 * Katere so najbolj uspešne platforme v zgodovini?
 * Kateri so najbolj uspešni studiji in založbe iger po kvaliteti del?
