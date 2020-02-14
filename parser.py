@@ -142,6 +142,7 @@ for game_link in game_links:
                         "platform" : game_data["platform"],
                         "genre" : genre})
         done_genres.append(genre)
+    
 games.sort(key=lambda game: game["title"])
 genres.sort(key=lambda game: game["title"])
 game_fields = ["title",
@@ -153,5 +154,6 @@ game_fields = ["title",
                      "user_score",
                      "esrb"]
 genre_fields = ["title", "platform", "genre"]
+
 write_csv(games, game_fields, "games.csv")
 write_csv(genres, genre_fields, "genres.csv")

@@ -115,6 +115,7 @@ class GameScrapThread (Thread):
 
 def main():
     # Downloading all the main pages with the list of games
+    # NOTE: Start at 10 as already had the first 10 pages downloaded
     save_all_main_pages(10)
 
     # Extracting the links to game pages using Beautiful Soup
@@ -129,6 +130,8 @@ def main():
     with open("link_list.txt", "r") as f:
         list_str = f.read()
 
+    # Probably should have initiated a separate object for each thread,
+    # so that they don't have to abuse locks to prevent a data race from happening.
     games = list_str.split("\n")
 
     size = int(len(games) / 4)
