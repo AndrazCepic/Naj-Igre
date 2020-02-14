@@ -40,3 +40,8 @@ Znani primeri:
 * Chrono Trigger - spet slab port/remaster na PC
 * Dark Souls - zelo slab FPS v Blightown lokaciji na Xbox 360
 * Need For Speed Underground 2 - čisto druga igra na Nintendo DS kot drugje!
+
+## Navodila za branje izdelka
+1. Zaženite ukaz 'jupyter notebook'
+2. Pojdite na spletni naslov, ki ga ponudi jupyter po izvedenem ukazu
+3. Tam v interaktivnem oknu kliknite na datoteko Naj_Igre.ipynb, ki je zvezek z analizo podatkov.
